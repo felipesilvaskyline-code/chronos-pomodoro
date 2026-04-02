@@ -2,11 +2,17 @@ import { Heading } from "./components/Heading";
 
 import "./styles/theme.css";
 import "./styles/global.css";
+import { TimerIcon } from "lucide-react";
 
 export function App() {
   return (
     <>
-      <Heading>Chronos-pomodoro</Heading>
+      <Heading>
+        Chronos-pomodoro
+        <button>
+          <TimerIcon />
+        </button>
+      </Heading>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
