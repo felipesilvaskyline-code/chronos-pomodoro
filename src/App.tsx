@@ -1,11 +1,11 @@
-import { Container } from "./components/Container";
-import { Menu } from "./components/Menu";
-import { Logo } from "./components/Logo";
-import { CountDown } from "./components/CountDown";
-import { DefaultInput } from "./components/DefaultInput";
+import { Container } from './components/Container';
+import { Menu } from './components/Menu';
+import { Logo } from './components/Logo';
+import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 
-import "./styles/theme.css";
-import "./styles/global.css";
+import './styles/theme.css';
+import './styles/global.css';
 
 export function App() {
   return (
@@ -25,7 +25,12 @@ export function App() {
       <Container>
         <form className="form" action="">
           <div className="formRow">
-            <DefaultInput id="input" type="text" labelText="Task"/>
+            <DefaultInput
+              id="input"
+              type="text"
+              placeholder="Digite algo..."
+              labelText="Task"
+            />
           </div>
           <div className="formRow">
             <p>Lorem ipsum dolor sit amet.</p>
