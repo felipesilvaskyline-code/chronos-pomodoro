@@ -1,5 +1,5 @@
 import { HistoryIcon, HouseIcon, SettingsIcon, SunIcon } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 
 type AvailableThemes = "dark" | "light";
@@ -18,8 +18,13 @@ export function Menu() {
     });
   }
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <div className={styles.menu}>
+      <h1>{theme}</h1>
       <a
         className={styles.menuLink}
         href="#"
